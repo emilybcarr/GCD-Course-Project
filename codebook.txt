@@ -2,8 +2,9 @@ run_analysis.R Codebook
 =======================
 COLUMN 1: Subject -- A number from 1 to 30 indicating which volunteer performed the activity in that row
 COLUMN 2: Activity -- Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist, which collected the data in the following columns.
-COLUMNS 3-81: Measurements from the Samsung Galaxy S II, called Features here (see Feature Details below)
-
+COLUMNS 3-81: The average (for each Subject and each Activity) of each type of measurement (79 types) collected from the Samsung Galaxy S II.
+       >> The measuremets are called Features here (see Feature Details below).
+       >> Each measurement was collected a various number of times for each Subject and Activity, and there are some NA values where no measurement was collected.
 
 
 Feature Details
