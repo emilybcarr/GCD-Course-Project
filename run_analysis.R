@@ -14,8 +14,8 @@
 
 ## Step 1:
     ## Manually download the data & save to appropriate folder
-    ## Set working directory to that folder
-        setwd("~/Data Science Training/Getting and Cleaning Data")
+    ## Set working directory to that folder (commented out)
+        #setwd("~/Data Science Training/Getting and Cleaning Data")
     ## Save the data sets into variables (tests: 2947 obs. of 1 var; trains: 7352 obs. of 1 var)
         features <- read.csv("UCI HAR Dataset/features.txt", sep = " ",header=FALSE)
         activities <- read.csv("UCI HAR Dataset/activity_labels.txt", sep = " ",header=FALSE)
@@ -97,6 +97,6 @@
             }
         }
         
-    ## print the resulting data frame to a txt file (commented out to avoid recreating file)
-        #write.table(dataset_stdmean_averages, file = "UCIHAR_stdmean_averages.txt", row.names = FALSE)
+    ## print the resulting data frame to a txt file
+        write.table(dataset_stdmean_averages, file = "UCIHAR_stdmean_averages.txt", row.names = FALSE)
         
